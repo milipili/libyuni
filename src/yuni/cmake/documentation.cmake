@@ -1,3 +1,0 @@
-
-ynmessage(MODULE "Documentation")
-
