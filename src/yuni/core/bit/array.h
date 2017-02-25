@@ -51,8 +51,6 @@ namespace Bit
 	class YUNI_DECL Array final
 	{
 	public:
-		//! Buffer Type
-		typedef CString<20, true> BufferType;
 		enum
 		{
 			//! Invalide offset
@@ -238,7 +236,7 @@ namespace Bit
 		// This value is lower or equal to the buffer size
 		uint pCount = 0;
 		//! Internal buffer
-		BufferType pBuffer;
+		CString<20, true> pBuffer;
 
 	}; // class Array
 
