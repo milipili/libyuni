@@ -20,8 +20,8 @@ namespace Bit
 	namespace // anonymous
 	{
 
-		template<bool ValueT>
-		uint Find(const Bit::Array::BufferType& pBuffer, uint pCount, uint offset)
+		template<bool ValueT, class BufferTypeT>
+		uint Find(const BufferTypeT& pBuffer, uint pCount, uint offset)
 		{
 			// bitmask
 			static const uchar mask[] = { 128, 64, 32, 16, 8, 4, 2, 1 };
