@@ -51,8 +51,6 @@ namespace Bit
 	class YUNI_DECL Array final
 	{
 	public:
-		//! Size
-		typedef uint Size;
 		//! Buffer Type
 		typedef CString<20, true> BufferType;
 		enum
