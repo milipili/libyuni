@@ -135,8 +135,12 @@ namespace Bit
 	}
 
 
-
-
 } // namespace Bit
 } // namespace Yuni
 
+
+std::ostream& operator << (std::ostream& out, const Yuni::Bit::Array& rhs)
+{
+	rhs.print(out);
+	return out;
+}

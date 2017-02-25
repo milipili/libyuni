@@ -12,8 +12,7 @@
 #include "../../yuni.h"
 #include "../string.h"
 #include "bit.h"
-#include <iostream>
-
+#include <iosfwd>
 
 
 namespace Yuni
