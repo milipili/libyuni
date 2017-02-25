@@ -21,7 +21,7 @@ namespace Bit
 	{
 
 		template<bool ValueT, class BufferTypeT>
-		uint Find(const BufferTypeT& pBuffer, uint pCount, uint offset)
+		uint findFirstBit(const BufferTypeT& pBuffer, uint pCount, uint offset)
 		{
 			// bitmask
 			static const uchar mask[] = { 128, 64, 32, 16, 8, 4, 2, 1 };
@@ -90,15 +90,14 @@ namespace Bit
 
 	template<> uint Array::find<true>(uint offset) const
 	{
-		return Find<true>(pBuffer, pCount, offset);
+		return findFirstBit<true>(pBuffer, pCount, offset);
 	}
 
 
 	template<> uint Array::find<false>(uint offset) const
 	{
-		return Find<false>(pBuffer, pCount, offset);
+		return findFirstBit<false>(pBuffer, pCount, offset);
 	}
-
 
 
 	bool Array::any() const
