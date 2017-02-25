@@ -61,13 +61,10 @@ namespace Bit
 		//@{
 		//! Default constructor
 		Array() = default;
-
 		//! Constructor, with an initial number of bits
 		explicit Array(uint n);
-
 		//! Constructor, with an initial number of bits and a value for each of them
 		Array(uint n, bool value);
-
 		//! Copy constructor
 		Array(const Array&) = default;
 		//@}
@@ -75,41 +72,25 @@ namespace Bit
 
 		//! \name Bit manipulation
 		//@{
-		/*!
-		** \brief Unset all bits at once
-		*/
+		//! Unset all bits at once
 		void reset();
 
-		/*!
-		** \brief Set/Unset all bits at once
-		*/
+		//! Set/Unset all bits at once
 		void reset(bool value);
 
-		/*!
-		** \brief Set the Ith bit
-		*/
+		//! Set the Ith bit
 		void set(uint i);
 
-		/*!
-		** \brief Set/Unset the Ith bit
-		*/
+		//! Set/Unset the Ith bit
 		void set(uint i, bool value);
 
-		/*!
-		** \brief Unset the Ith bit
-		*/
+		//! Unset the Ith bit
 		void unset(uint i);
 
-		/*!
-		** \brief Unset all bits at once
-		**
-		** Equivalent to reset().
-		*/
+		//! Unset all bits at once (see reset())
 		void unset();
 
-		/*!
-		** \brief Get if the Ith bit is set
-		*/
+		//! Get if the Ith bit is set
 		bool get(uint i) const;
 
 		/*!
@@ -119,19 +100,13 @@ namespace Bit
 		*/
 		bool test(uint i) const;
 
-		/*!
-		** \brief Test if any bit is set
-		*/
+		//! Test if any bit is set
 		bool any() const;
 
-		/*!
-		** \brief Test if no bit is set
-		*/
+		//! Test if no bit is set
 		bool none() const;
 
-		/*!
-		** \brief Test if all bit are set
-		*/
+		//! Test if all bit are set
 		bool all() const;
 		//@}
 
@@ -238,10 +213,6 @@ namespace Bit
 		CString<20, true> pBuffer;
 
 	}; // class Array
-
-
-
-
 
 
 } // namespace Bit
